@@ -1,0 +1,12 @@
+.venv/
+.idea/
+.pytest_cache/
+assets/
+
+report.html
+.coverage
+
+app/__pycache__/
+alembic/__pycache__/
+__pycache__/
+
