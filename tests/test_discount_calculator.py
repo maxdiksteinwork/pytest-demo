@@ -108,11 +108,9 @@ def test_skipped_example():
     pytest.fail("Этот тест пропущен, он не должен выполняться")
 
 
-def test_fail_force_example():
-    if False:
-        pytest.fail("Искусственная ошибка") # недостижимая строчка кода
-    assert True # тест всегда проходит
-
+def test_fail_force_example():    
+    pytest.fail("Искусственная ошибка") # роняем тест
+    
 
 # демонстрация approx
 def test_many_decimal_discounts():
